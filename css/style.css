@@ -1,11 +1,14 @@
-
+html{
+    height: 100%;
+}
 body{
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     animation-name: bgc;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-duration: 30s;
-    background: linear-gradient( 200deg , rgb(87, 86, 86),rgb(29, 27, 27), rgb(236, 236, 236),rgb(2, 1, 1));
+    background: linear-gradient( 200deg ,#34495e,#3498db, #34495e,#3498db);
     background-size: 800% 800%;
     
     
@@ -40,6 +43,8 @@ body{
     align-items: center;
     flex-direction: column;
     box-shadow: 1px 1px 90px  rgb(196, 202, 255);
+    -webkit-backface-visibility: hidden;
+    transform: translate3D(0,0,0);
 
 }
 
@@ -65,14 +70,13 @@ text-shadow: 1px 1px 40px rgb(0, 0, 0);
     border-radius: 14px;
     outline: none;
     padding: 20px;
-    transition: 1s;
+    transition: all .25s;
 }
 .login input:focus{
     border-top: 2px solid rgb(86, 86, 255);
     border-left: 2px solid rgb(54, 54, 214);
     border-right: 2px solid rgb(77, 77, 163);
     border-bottom: 2px solid rgb(52, 52, 117);
-    transition: 1s;
     outline: none;
     width: 80%;
 }
@@ -92,7 +96,7 @@ text-shadow: 1px 1px 40px rgb(0, 0, 0);
 .button{
     margin-top: 10px;
     width: 45%;
-    background: linear-gradient(to left,white,black,white);
+    background: linear-gradient(to left,#34495e,#3498db,#34495e);
     color: rgb(252, 235, 235);
     text-decoration: none;
     text-align: center;
@@ -100,9 +104,9 @@ text-shadow: 1px 1px 40px rgb(0, 0, 0);
     border-radius: 20px;
     text-shadow: 1px 1px 30px black;
     font-weight: 700;
-    transition: all .5s;
+    transition: all .25s;
 }
 .button:hover{
     width: 65%;
-    color: white;
+    color: rgb(0, 0, 0);
 }
